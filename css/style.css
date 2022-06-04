@@ -8,6 +8,7 @@
   --p-color: #3a3a3a;
   --line-hight: 1.6;
   --transition: 0.3s;
+  --padding: 60px;
 }
 html {
   scroll-behavior: smooth;
@@ -50,6 +51,17 @@ ul {
     width: 1170px;
   }
 }
+/*Start components  */
+.main-title {
+  color: var(--h-color);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+/*End components  */
 /* Start Landning */
 .landing {
   position: relative;
@@ -113,4 +125,24 @@ ul {
 }
 /* End Landning */
 /* Start About  */
+.about {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+
+.about .container p {
+  margin: 0 auto 20px;
+  max-width: 700px;
+  text-align: center;
+  color: var(--p-color);
+  font-size: 20px;
+  line-height: var(--line-hight);
+  font-weight: 100;
+}
+.about .container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+}
+
 /* Start About  */
