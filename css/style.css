@@ -163,7 +163,13 @@ ul {
   justify-content: center;
   align-items: center;
   color: white;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
+
 .stats .container .box i {
   margin-right: 18px;
   font-size: 35px;
@@ -178,6 +184,9 @@ ul {
 .stats .container .box .info span.text {
   font-size: 20px;
   font-weight: 300;
+}
+.stats .container .box:hover {
+  color: black;
 }
 @media (max-width: 767px) {
   .stats .container .box {
