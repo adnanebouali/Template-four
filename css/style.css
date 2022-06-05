@@ -6,6 +6,7 @@
   --alt-color: #2d9390;
   --h-color: #1d1d1d;
   --p-color: #3a3a3a;
+  --section-color: #f1f1f1;
   --line-hight: 1.6;
   --transition: 0.3s;
   --padding: 60px;
@@ -203,6 +204,10 @@ ul {
 }
 /* End stats  */
 /* Start Gallery  */
+.gallery {
+  background-color: var(--section-color);
+  padding-bottom: calc(var(--padding) - 59px);
+}
 .gallery .holder {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -280,3 +285,38 @@ ul {
   width: calc(100% - 40px);
 }
 /* End Gallery  */
+/* Start Process  */
+.process {
+  position: relative;
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+.process .container {
+}
+.process .container p {
+  margin: 0 auto 60px;
+  max-width: 700px;
+  text-align: center;
+  color: var(--p-color);
+  font-size: 20px;
+  line-height: var(--line-hight);
+  font-weight: 100;
+}
+
+.process .container .video {
+  position: relative;
+  overflow: hidden;
+}
+.process .container .video .overlay {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 2px);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+.process .container video {
+  max-width: 100%;
+}
+/* End Process  */
