@@ -292,8 +292,7 @@ ul {
   padding-top: var(--padding);
   padding-bottom: var(--padding);
 }
-.process .container {
-}
+
 .process .container p {
   margin: 0 auto 60px;
   max-width: 700px;
@@ -410,3 +409,26 @@ ul {
   }
 }
 /* End testimonials */
+/* Start Logos */
+.logos {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+}
+.logos .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px 15px;
+}
+.logos .container img {
+  height: 30px;
+}
+@media (max-width: 767px) {
+  .logos .container {
+    flex-direction: column;
+    gap: 60px 15px;
+  }
+}
+
+/* End Logos */
