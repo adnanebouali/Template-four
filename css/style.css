@@ -184,12 +184,16 @@ ul {
   padding: 0;
   font-size: 40px;
   font-weight: 400;
+  animation: myAnim 1s ease 0s 1 normal forwards;
 }
 .landing .container p {
   font-size: 20px;
   font-weight: 100;
   color: var(--p-color);
   line-height: 1.5;
+  opacity: 0;
+  animation: myAnim 1s ease 0.5s 1 normal forwards;
+  -webkit-animation: myAnim 1s ease 0.5s 1 normal forwards;
 }
 .landing .container a {
   color: white;
@@ -205,6 +209,9 @@ ul {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  opacity: 0;
+  animation: myAnim2 1s ease 0s 1 normal forwards;
+  -webkit-animation: myAnim2 1s ease 1s 1 normal forwards;
 }
 .landing .container a:hover {
   background-color: var(--alt-color);
@@ -215,6 +222,36 @@ ul {
   }
   .landing .container h1 {
     font-size: 35px;
+  }
+}
+@keyframes myAnim {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes myAnim2 {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+    -moz-transform: translateY(250px);
+    -ms-transform: translateY(250px);
+    -o-transform: translateY(250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
   }
 }
 /* End Landning */
